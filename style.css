@@ -5,7 +5,12 @@ body {
   background-size: auto;
   background-position: 100% 100%;
   background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 h1 {
   color: ivory;
@@ -71,14 +76,12 @@ footer span {
 
 div.container {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin: 0 auto;
+  
   padding: 0.8em 1em;
   text-align: center;
   background-color: rgb(0, 0, 0);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
+
  
 }
 
@@ -141,14 +144,12 @@ div.pullUpDown a:hover:after {
 #SamplePlayerDivID {
   padding: 8em;
   
-  display: inline-block;
+  float:right;
   background-image: url("images/wideguitar.jpg");
   background-repeat: no-repeat;
 }
 
-#mainindex {
-  background-image: url("images/wideguitar.jpg");
-}
+
 
 footer {
   background-color: #9147ff;
@@ -175,10 +176,12 @@ footer {
 
 
 
-#videodiv {
-  display: grid;
+main
+ { 
+  overflow:auto;
 
 }
+
 .videotitle {display:grid;
   text-align: right;}
 
@@ -203,6 +206,7 @@ main table {
   margin-right: auto;
 }
 
+main h1 {text-align: center;}
 tr,
 td {
   padding: 1em;
