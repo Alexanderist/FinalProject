@@ -11,6 +11,8 @@ body {
   
 }
 
+main {height: 100%;
+  overflow:auto;}
 
 h1 {
   color: ivory;
@@ -26,9 +28,7 @@ footer {
   font-style: italic;
   color: beige;
   
-  bottom: 0;
-  left: 0;
-  bottom:0px;
+  
   width: 100%;
   font-size: 12px;
 }
@@ -63,14 +63,34 @@ header span {
   color: #222;
 }
 
+/* global flex classes */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
 
 
 
 /* nav styling */
 
 .longlogo {margin-bottom: 0.6em;
-  width: 25%;
+  width: 275px;
 }
 
 
@@ -83,6 +103,7 @@ div.container {
   background-color: rgb(0, 0, 0);
   display: block;
   width: 100%;
+  box-sizing: border-box;
 
   
 
@@ -149,11 +170,10 @@ div.pullUpDown a:hover:after {
 
 #pinklogo {
   line-height: 0%;
-  
-  width: 22%;
-  min-width: 255px;
   position: absolute;
-  top: 4.5em;
+  width: 18%;
+  min-width: 255px;
+  top: 4em;
   right: 3%;
 filter: drop-shadow(1px 1px 7px);} 
   /* background: linear-gradient(
@@ -164,17 +184,21 @@ filter: drop-shadow(1px 1px 7px);}
   ); */
 
   /* background-repeat: no-repeat; */
+#mainindex {background-image: url("images/wideguitar.jpg");}
 
-#indexwrap {display: flex;
+#indexdiv {display: flex;
   flex-direction: row;
-  background-image: url("images/wideguitar.jpg");
-background-repeat: none;}
+  
+background-repeat: none;
+padding: 2em;
+margin-top: 4em;
+}
 
 
 #SamplePlayerDivID {
-  padding:12em 0em 4em 0em;
+  /* padding:10em 0em 0em 0em; */
   
-  
+  flex: 60%;
  
   background-repeat: no-repeat;
    
@@ -182,49 +206,45 @@ background-repeat: none;}
   text-align: center;
 }
 #action {
-  
  margin-left: 2em;
- margin-right: 2em;
+flex:40%;
   border-radius: 1.5em;
   filter: drop-shadow(1em 0em 28px #000000);
-  margin-top: 0em;
-  vertical-align: top;
-  width: 525px;
-  
-}
-
-
-
-
-
-
-
-
-main
- { 
-  overflow:auto;
+  width: 500px;
+  align-self: center;
 
 }
+
+
+
+
+
+
+
+
+
 
 /* highlights styling */
 
-#videodiv {
+.youtubecolumn {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  flex-wrap: wrap;
+  height: 1150px;
+align-items: center;
 }
+
 
 #videodiv h3 {text-align: center;
 color: ivory;
 }
-.videotitle {display:grid;
-  text-align: right;}
+
 
 .youtube {  display: block;
   margin-left: auto;
   margin-right: auto;
-  
-  }
+   }
+   #charitymilestones {width: 20%;}
 
 /* top ten styling */
 
@@ -310,20 +330,30 @@ th {
 
 /* about.html styling */
 
-#about {display: flex;
-  flex-direction: column;
-  text-align: center;
+#about {
+  display: flex;
+  flex-direction: row;
+align-items: center;
+justify-content: center;
+
 }
-#about img {width: 75%;
+ #about p {text-align: left}
+
+#about img {
+  flex: row;
+  margin-top: 4em;
+  width: 60%;
+  float: left;
+  
   display: block;
   margin-left: auto;
-  margin-right: auto;}
+  margin-right: auto;
+border-radius: 4em;}
 
 /* responsiveness styling */
 
-.column {
-  float: left;
-  width: 18%;
+.column {flex: auto;
+  width: 100px;
   padding: 5px;
 }
 
@@ -363,22 +393,7 @@ margin-bottom: auto;}
   margin-left: auto;
 margin-right: auto;} 
 
-@font-face {
-  font-family: OptimusPrinceps; 
-  src: url("OptimusPrinceps.ttf");
-}
 
-#imgtext { /* expanded image text */
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color:gold;
-  font-size: 28px;
-  filter: drop-shadow(2px 2px 3px #000000);
-  
-  
-  font-family: OptimusPrinceps;
-}
 
 
 .closebtn { /* close button inside the image */
@@ -395,3 +410,26 @@ margin-right: auto;}
   
   margin-left: 15%;
   margin-right: 15%;} 
+
+
+  
+  #imgtext { /* expanded image text */
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color:gold;
+    font-size: 28px;
+    filter: drop-shadow(2px 2px 3px #000000);
+    
+    
+    font-family: OptimusPrinceps;
+  }
+
+  @font-face {
+    font-family: OptimusPrinceps; 
+    src: url("OptimusPrinceps.ttf");
+  }
+
+  @media screen {
+    
+  }
