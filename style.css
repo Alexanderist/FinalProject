@@ -114,7 +114,11 @@ div.container a {
   margin-right: auto;
   margin-left: auto;
 }
-
+@media only screen and (max-width: 637px) {.nav a {
+padding: 6em;
+}
+  
+}
 div.galcontainer {
   margin: 0 auto;
   padding: 2.7em 3em;
@@ -158,6 +162,7 @@ div.pullUpDown a:hover:after {
   height: 100%;
 }
 
+/* index styling */
 
 #indexWrapper {
   display: flex;
@@ -302,7 +307,7 @@ td {
 #contact h3 {
   display: flex;
   flex: 50%;
-  padding-left: 0.5em;
+  
   margin-bottom: 0.3em;
   color: rgb(255, 255, 134);
 }
@@ -310,7 +315,7 @@ td {
 #contact h4 {
   flex: 50%;
   display: flex;
-  padding-left: 1em;
+  
   color: ivory;
 }
 
@@ -321,22 +326,31 @@ td {
 #contact input {
   margin-top: 0.6em;
   width: 12%;
+  min-width: 200px;
 }
 
 #contact textarea {
+  height: 100px;
   margin-top: 0.6em;
   width: 30%;
-  height: 20%
+  min-width: 250px;
   ;
 }
  
 #contact a {display: flex;}
 
 #contact a img {width: 75px;
-padding: 1em;}
+margin: 1em;}
 
 #contact a label {flex:auto;
-  align-self: center;}
+  align-self: center;
+border: 20px;
+padding: 0.3em;
+background-color: rgba(240, 248, 255, 0.8);
+cursor: pointer;
+border-radius: 0.5em;
+text-align: center;
+}
 
 
 
