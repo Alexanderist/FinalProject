@@ -186,7 +186,8 @@ div.pullUpDown a:hover:after {
 #action :nth-child(2) { margin-top: 1em;
  filter: drop-shadow(1px 1px 1px);
 
-background-color: rgb(86, 29, 139);
+background-color: rgb(86, 29, 139, 0.7);
+
 border-radius: 0.8em;
 padding: 0.3em;
 margin-bottom: 1.5em;
@@ -214,14 +215,13 @@ margin-top: 2em;
 /* highlights styling */
 
 .youtubecolumn {
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2em 7em 0em 7em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 1150px;
   align-items: center;
-  width: 85%;
+  width: auto;
   
 }
 
@@ -248,6 +248,23 @@ border-style: ridge;}
 }
 #charitymilestones {
   width: 500px;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+  #videodiv {flex-wrap: nowrap;}
+  
+  .youtubecolumn {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    align-items: center;
+    width: auto;
+    
+  }
 }
 
 /* top ten styling */
@@ -321,7 +338,7 @@ padding: 1em;}
 #contact a label {flex:auto;
   align-self: center;}
 
-/* top ten page styling */
+
 
 table {
   width: 100%;
@@ -348,46 +365,7 @@ th {
   margin-right: auto;
 }
 
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
-/* Force table to not be like tables anymore */
-table, thead, tbody, th, td, tr {
-display: block;
-}
-/* Hide table headers (but not display: none;, for accessibility) */
-thead tr {
-position: absolute;
-top: -9999px;
-left: -9999px;
-}
-tr { border: 1px solid #ccc; }
 
-
-td {
-/* Behave like a "row" */
-border: none;
-border-bottom: 1px solid #eee;
-
-position: relative;
-padding-left: 50%;
-}
-td:before {
-/* Now like a table header */
-position: absolute;
-/* Top/left values mimic padding */
-top: 6px;
-left: 6px;
-width: 45%;
-padding-right: 10px;
-white-space: nowrap;
-}
-/* Label the data */
-td:nth-of-type(1):before { content: "First Name"; }
-td:nth-of-type(2):before { content: "Last Name"; }
-td:nth-of-type(3):before { content: "Job Title"; }
-
-}
-/* about.html styling */
 
 #about {
   display: flex;
@@ -456,6 +434,8 @@ td:nth-of-type(3):before { content: "Job Title"; }
   margin-right: auto;
 }
 
+/* gallery styling */ 
+
 .closebtn {
   /* close button inside the image */
   position: absolute;
@@ -470,9 +450,10 @@ td:nth-of-type(3):before { content: "Job Title"; }
   border-style: groove;
   border-width: 15px;
 
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+#gallerysmall img {max-width: 160px;}
 
 #imgtext {
   /* expanded image text */
