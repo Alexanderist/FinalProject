@@ -8,18 +8,20 @@ body {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
-  
 }
 
-main {height: 100%;
-  overflow:auto;}
+main {
+  height: 100%;
+  overflow: auto;
+  color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 h1 {
-  color: ivory;
+  
   filter: drop-shadow(1px 1px 3px #000);
 }
 
-h2{color: ivory;}
 
 footer {
   background-color: #9147ff;
@@ -27,8 +29,7 @@ footer {
   text-align: center;
   font-style: italic;
   color: beige;
-  
-  
+
   width: 100%;
   font-size: 12px;
 }
@@ -37,12 +38,10 @@ footer span {
   color: #aaa;
 }
 
-
 .boxlogo {
   width: 25px;
   display: inline-block;
 }
-
 
 header {
   font-family: Raleway;
@@ -85,29 +84,22 @@ header span {
   flex: 2;
 }
 
-
-
 /* nav styling */
 
-.longlogo {margin-bottom: 0.6em;
+.longlogo {
+  margin-bottom: 0.6em;
   width: 275px;
 }
 
-
-
 div.container {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  
+
   padding: 0.8em 1em;
   text-align: center;
   background-color: rgb(0, 0, 0);
   display: block;
   width: 100%;
   box-sizing: border-box;
-
-  
-
- 
 }
 
 div.container a {
@@ -120,7 +112,8 @@ div.container a {
   z-index: 0;
   cursor: pointer;
   margin-right: auto;
-  margin-left:auto;}
+  margin-left: auto;
+}
 
 div.galcontainer {
   margin: 0 auto;
@@ -138,7 +131,6 @@ div.galcontainer a {
   position: relative;
   z-index: 0;
   cursor: pointer;
-  
 }
 
 div.pullUpDown a:before,
@@ -166,85 +158,97 @@ div.pullUpDown a:hover:after {
   height: 100%;
 }
 
-/* index styles */
+
+#indexWrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/wideguitar.jpg");
+  background-repeat: no-repeat;
+  
+  height: inherit;
+  align-items: center;
+  
+}
 
 #pinklogo {
-  line-height: 0%;
-  position: absolute;
-  width: 18%;
-  min-width: 255px;
-  top: 4em;
-  right: 3%;
-filter: drop-shadow(1px 1px 7px);} 
-  /* background: linear-gradient(
-    90deg,
-    rgb(30, 30, 30) 0%,
-    rgb(145, 144, 144) 50%,
-    rgb(30, 30, 30) 100%
-  ); */
-
-  /* background-repeat: no-repeat; */
-#mainindex {background-image: url("images/wideguitar.jpg");}
-
-#indexdiv {display: flex;
-  flex-direction: row;
-  
-background-repeat: none;
-padding: 2em;
-margin-top: 4em;
+  width: 300px;
+  align-self: center;
 }
 
+#action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  width: 600px;
+}
+
+#action :nth-child(2) { margin-top: 1em;
+ filter: drop-shadow(1px 1px 1px);
+
+background-color: rgb(86, 29, 139);
+border-radius: 0.8em;
+padding: 0.3em;
+margin-bottom: 1.5em;
+border: ivory;
+border-style: ridge;}
 
 #SamplePlayerDivID {
-  /* padding:10em 0em 0em 0em; */
-  
-  flex: 60%;
- 
-  background-repeat: no-repeat;
-   
-
+  display: flex;
   text-align: center;
+  justify-content: center;
+margin-top: 2em;
+
+  width: 100%;
+  flex-wrap: wrap;
 }
-#action {
- margin-left: 2em;
-flex:40%;
+
+#SamplePlayerDivID div {
+  margin: 2em 4em 0em 4em;
+}
+#action img {
   border-radius: 1.5em;
   filter: drop-shadow(1em 0em 28px #000000);
-  width: 500px;
-  align-self: center;
-
 }
-
-
-
-
-
-
-
-
-
 
 /* highlights styling */
 
 .youtubecolumn {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 1150px;
-align-items: center;
+  align-items: center;
+  width: 85%;
+  
 }
 
-
-#videodiv h3 {text-align: center;
-color: ivory;
+#videodiv h3 {
+  text-align: center;
+  color: ivory;
+  width: 600px;
 }
 
+#videodiv h4 {color: ivory;
+width: 550px;
+text-align: center;
+background-color: rgb(86, 29, 139);
+border-radius: 0.8em;
+padding: 0.3em;
+border: ivory;
+border-style: ridge;}
 
-.youtube {  display: block;
+
+.youtube {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-   }
-   #charitymilestones {width: 20%;}
+}
+#charitymilestones {
+  width: 500px;
+}
 
 /* top ten styling */
 
@@ -263,7 +267,9 @@ main table {
   margin-right: auto;
 }
 
-main h1 {text-align: center;}
+main h1 {
+  text-align: center;
+}
 tr,
 td {
   padding: 1em;
@@ -281,7 +287,7 @@ td {
   flex: 50%;
   padding-left: 0.5em;
   margin-bottom: 0.3em;
-  color:rgb(255, 255, 134)
+  color: rgb(255, 255, 134);
 }
 
 #contact h4 {
@@ -292,28 +298,37 @@ td {
 }
 
 #contact img {
-  
-
   display: inline-flex;
-  
 }
 
 #contact input {
-  margin-top: .6em;
+  margin-top: 0.6em;
   width: 12%;
-  
 }
 
 #contact textarea {
-  margin-top: .6em;
+  margin-top: 0.6em;
   width: 30%;
-  height: 20%;
+  height: 20%
+  ;
 }
+ 
+#contact a {display: flex;}
+
+#contact a img {width: 75px;
+padding: 1em;}
+
+#contact a label {flex:auto;
+  align-self: center;}
+
+/* top ten page styling */
 
 table {
   width: 100%;
   border-collapse: collapse;
 }
+
+
 
 th {
   background: #333;
@@ -328,41 +343,91 @@ th {
   text-align: center;
 }
 
+.tablewrapper {width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr {
+display: block;
+}
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+tr { border: 1px solid #ccc; }
+
+
+td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #eee;
+
+position: relative;
+padding-left: 50%;
+}
+td:before {
+/* Now like a table header */
+position: absolute;
+/* Top/left values mimic padding */
+top: 6px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+}
+/* Label the data */
+td:nth-of-type(1):before { content: "First Name"; }
+td:nth-of-type(2):before { content: "Last Name"; }
+td:nth-of-type(3):before { content: "Job Title"; }
+
+}
 /* about.html styling */
 
 #about {
   display: flex;
   flex-direction: row;
-align-items: center;
-justify-content: center;
-
+  align-items: center;
+  justify-content: space-evenly ;
 }
- #about p {text-align: left}
+#about p {
+  text-align: center;
+}
 
 #about img {
-  flex: row;
-  margin-top: 4em;
-  width: 60%;
-  float: left;
   
+ padding: 2em;
+  width: 60%;
+ 
+
   display: block;
   margin-left: auto;
   margin-right: auto;
-border-radius: 4em;}
+  border-radius: 4em;
+}
+
+#playing {flex: 3;}
+
+.abouttext {flex: 2;}
 
 /* responsiveness styling */
 
-.column {flex: auto;
+.column {
+  flex: auto;
   width: 100px;
   padding: 5px;
 }
 
-
-
-.column span {display:list-item;
-margin-top: auto;
-margin-bottom: auto;}
-
+.column span {
+  display: list-item;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 .column img {
   opacity: 0.8;
@@ -373,30 +438,26 @@ margin-bottom: auto;}
   opacity: 1;
 }
 
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
 .galcontainer {
   position: relative;
-  display:none;
+  display: none;
   max-width: 50%;
-
-
 }
 
-.row {max-width:75%;
+.row {
+  max-width: 75%;
   margin-left: auto;
-margin-right: auto;} 
+  margin-right: auto;
+}
 
-
-
-
-.closebtn { /* close button inside the image */
+.closebtn {
+  /* close button inside the image */
   position: absolute;
   top: 10px;
   right: 15px;
@@ -405,31 +466,54 @@ margin-right: auto;}
   cursor: pointer;
 }
 
-#gallerysmall {border-style: groove;
+#gallerysmall {
+  border-style: groove;
   border-width: 15px;
-  
+
   margin-left: 15%;
-  margin-right: 15%;} 
+  margin-right: 15%;
+}
 
+#imgtext {
+  /* expanded image text */
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: gold;
+  font-size: 28px;
+  filter: drop-shadow(2px 2px 3px #000000);
 
-  
-  #imgtext { /* expanded image text */
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color:gold;
-    font-size: 28px;
-    filter: drop-shadow(2px 2px 3px #000000);
-    
-    
-    font-family: OptimusPrinceps;
+  font-family: OptimusPrinceps;
+}
+
+@font-face {
+  font-family: OptimusPrinceps;
+  src: url("OptimusPrinceps.ttf");
+}
+
+/* @media only screen and (max-width: 1560px) {
+  #indexdiv {
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+  }
+  #pinklogo {
+    overflow: auto;
+    display: block;
+    position: unset;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  @font-face {
-    font-family: OptimusPrinceps; 
-    src: url("OptimusPrinceps.ttf");
+  #SamplePlayerDivID {
+    margin-bottom: 2em;
+    margin-top: 2em;
   }
 
-  @media screen {
-    
+  #action {
+    margin: 0%;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+} */

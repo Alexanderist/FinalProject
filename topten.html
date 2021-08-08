@@ -5,50 +5,249 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alexander Mykitschak">
+    
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     
-    <title>Relaxander666</title>
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+    
+    <title>Relaxander666 Home</title>
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
 </head>
+<header><div class="container pullUpDown"> <!--Navigation - now with animation!-->
+    <img src="images/longlogo.png" class="longlogo" alt="Relaxander text logo"><br>
+ <a href="index.html">Home</a>
+ <a href="about.html">About Me</a>
+ <a href="highlights.html">Highlights</a>
+ <a href="schedule.html">Schedule</a>
+ <a href="gallery.html">Gallery</a>
+ <a href="topten.html">Top Ten</a>
+ <a href="contact.html">Contact</a>
+</div>
+</header>
 <body>
+           <style>
+           * { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	font: 14px/1.4 Georgia, Serif; 
+}
+#page-wrap {
+	margin: 50px;
+  
+}
+p {
+	margin: 20px 0; 
+}
+
+	/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	table { 
+		width: 100%; 
+		border-collapse: collapse; 
     
-    <div class="container pullUpDown">
-        <img src="images/longlogo.png" class="longlogo" alt="Relaxander text logo"><br>
-           <a href="index.html">Home</a>
-           <a href="about.html">About Me</a>
-           <a href="highlights.html">Highlights</a>
-           <a href="schedule.html">Schedule</a>
-           <a href="gallery.html">Gallery</a>
-           <a href="topten.html">Top Ten</a>
-           <a href="contact.html">Contact</a>
-         </div>
-         
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) { 
+		background: rgb(51, 51, 51); 
+	}
+	th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: center;
+   
+   
+	}
+
+  img {max-width: 220px;}
+           @media only screen and (max-width: 760px),
+            (min-device-width: 768px) and (max-device-width: 1024px) {
+    
+                /* Force table to not be like tables anymore */
+                table,
+                thead,
+                tbody,
+                th,
+                td,
+                tr {
+                    display: block;
+                }
+    
+                /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr {
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+    
+                tr {
+                    border: 1px solid #ccc;
+                }
+    
+                td {
+                    /* Behave  like a "row" */
+                    border: none;
+                    border-bottom: 1px solid #eee;
+                    position: relative;
+                    padding-left: 50%;
+                    
+                }
+    
+                td:before {
+                    /* Now like a table header */
+                    position: absolute;
+                    /* Top/left values mimic padding */
+                    top: 6px;
+                    left: 6px;
+                    width: 45%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                }
+    
+                /*
+        Label the data
+        */
+                td:nth-of-type(1):before {
+                    content: "Band Name";
+                }
+                td:nth-of-type(2):before {
+                    content: "Album Name";
+                }
+                td:nth-of-type(3):before {
+                    content: "Genre, Year of Release";
+                }
+                td:nth-of-type(4):before {
+                    content: "Album Art";
+                }
+             
+    
+            /* Smartphones (portrait and landscape) ----------- */
+    
+            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+                body {
+                    padding: 0;
+                    margin: 0;
+                    width: 320px;
+                }
+            }
+    
+            /* iPads (portrait and landscape) ----------- */
+    
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                body {
+                    width: 495px;
+                }
+            }
+          }
+        
+    tr:nth-of-type(even) { background-color: #1b1b1b; }
+        </style>   
+        <!--<![endif]-->
+        
          <main>
             <h1>My Top Five Albums (Stream Essentials):</h1>
+            <div class="pagewrap">
                 <table>
+                  <thead>
                     <tr>
-                      <th>Protest The Hero</th>
-                      <th>Meshuggah</th>
-                      <th>Opeth</th>
-                      <th>Vektor</th>
-                      <th>The Dillinger Escape Plan</th>
+                      <th>Band Name</th>
+                      <th>Album Title:</th>
+                      <th>Genre/Year</th>
+                      <th>Album Art</th>
+                      <th>Description</th>
                     </tr>
+                    </thead>
                     <tr>
-                      <th>Fortress</th>
-                      <th>Obzen</th>
-                      <th>Ghost Reveries</th>
-                      <th>Terminal Redux</th>
-                      <th>One Of Us Is The Killer</th>
+                      <td>Protest The Hero</td>
+                      <td>Fortress</td>
+                      <td>Progressive Metal - 2008</td>
+                      <td><a href="https://en.wikipedia.org/wiki/Fortress_(Protest_the_Hero_album)"><img src="images/fortress.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
                       </tr>
+                      <tr>
+                      <td>Meshuggah</td>
+                      <td>Obzen</td>
+                      <td>Extreme Metal/Djent - 2008</td>
+                      <td><a href="https://en.wikipedia.org/wiki/ObZen"><img src="images/obzen.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      <td>Opeth</td>
+                      <td>Ghost Reveries</td>
+                      <td>Progressive Death Metal - 2005</td>
+                      <td><a href="https://en.wikipedia.org/wiki/Ghost_Reveries"><img src="images/ghostreveries.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                
+                      <tr>
+                      <td>Vektor</td>
+                      <td>Terminal Redux</td>
+                      <td>Thrash/Death Metal 2016</td>
+                      <td><a href="https://en.wikipedia.org/wiki/Terminal_Redux"><img src="images/terminalredux.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      <td>The Dillinger Escape Plan</td>
+                      <td>One Of Us Is The Killer</td>
+                      <td>Progressive Metal - 2013</td>
+                      <td><a href="https://en.wikipedia.org/wiki/One_of_Us_Is_the_Killer"><img src="images/oneofus.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      <td>Thantifaxath</td>
+                      <td>Sacred White Noise</td>
+                      <td>Black Metal - 2014</td>
+                      <td><a href="https://darkdescentrecords.bandcamp.com/album/sacred-white-noise"><img src="images/blindingwhite.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      <td>TesseracT</td>
+                      <td>One</td>
+                      <td>Progressive Metal/Djent - 2011</td>
+                      <td><a href="https://en.wikipedia.org/wiki/One_(Tesseract_album)"><img src="images/tesseractOne.png"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      <td>The Black Dahlia Murder</td>
+                      <td>Everblack</td>
+                      <td>Melodeath - 2013</td>
+                      <td><a href="https://en.wikipedia.org/wiki/Everblack_(The_Black_Dahlia_Murder_album)"><img src="images/everblack.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      <td>Between The Buried And Me</td>
+                      <td>The Great Misdirect</td>
+                      <td>Progressive Death Metal - 2009</td>
+                      <td><a href="https://en.wikipedia.org/wiki/The_Great_Misdirect"><img src="images/theGreatMisdirect.jpg"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      <td>Mastodon</td>
+                      <td>Blood Mountain</td>
+                      <td>Progressive Metal - 2006</td>
+                      <td><a href="https://en.wikipedia.org/wiki/Blood_Mountain_(album)"><img src="images/bloodMountain.JPG"></a></td>
+                      <td>beeeeeeep bop ba bado bo</td>
+                      </tr>
+                      <tr>
+                      
+
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Fortress_(Protest_the_Hero_album)"><img src="images/fortress.jpg"></a></td>
-                        <td><a href="https://en.wikipedia.org/wiki/ObZen"><img src="images/obzen.jpg"></a></td>
-                        <td><a href="https://en.wikipedia.org/wiki/Ghost_Reveries"><img src="images/ghostreveries.jpg"></a></td>
-                        <td><a href="https://en.wikipedia.org/wiki/Terminal_Redux"><img src="images/terminalredux.jpg"></a></td>
-                        <td><a href="https://en.wikipedia.org/wiki/One_of_Us_Is_the_Killer"><img src="images/oneofus.jpg"></a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     </table>
-            
+            </div>
 
          </main>
          <footer><img src="images/r666.png" class="boxlogo" alt="r666 box logo"><br><italic>Copyright 2021 Alexander Mykitschak</italic></footer>
