@@ -10,9 +10,10 @@ body {
   height: 100vh;
 }
 
+
 main {
   height: 100%;
-  overflow: auto;
+  
   color: rgb(255, 255, 255);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -24,7 +25,8 @@ h1 {
 
 
 footer {
-  background-color: #9147ff;
+  position:sticky;
+    background-color: #9147ff;
   padding: 0.2em 0em 0.1em 0em;
   text-align: center;
   font-style: italic;
@@ -60,7 +62,11 @@ header h1 {
 
 header span {
   color: #222;
+
 }
+
+a:link {color:rgb(255, 255, 134)}
+a:visited {color:#9147ff}
 
 /* global flex classes */
 .row {
@@ -239,7 +245,7 @@ margin-top: 2em;
 #videodiv h4 {color: ivory;
 width: 550px;
 text-align: center;
-background-color: rgb(86, 29, 139);
+background-color: rgb(86, 29, 139, 0.7);
 border-radius: 0.8em;
 padding: 0.3em;
 border: ivory;
@@ -271,6 +277,15 @@ border-style: ridge;}
     
   }
 }
+
+/* Schedule styling */
+
+#schedule {width: 60%;
+margin-left: 20%;
+margin-right: 20%;
+padding: 1.7em 0em;}
+
+#schedule tr, td {height: 3em;}
 
 /* top ten styling */
 
@@ -326,20 +341,22 @@ td {
 #contact input {
   margin-top: 0.6em;
   width: 12%;
-  min-width: 200px;
+  min-width: 220px;
+  
 }
 
 #contact textarea {
   height: 100px;
   margin-top: 0.6em;
-  width: 30%;
+  width: 100%;
   min-width: 250px;
-  ;
+  
 }
  
-#contact a {display: flex;}
+#contact a {display: flex;
+margin: 0.8em;}
 
-#contact a img {width: 75px;
+#contact a img {width: 50px;
 margin: 1em;}
 
 #contact a label {flex:auto;
@@ -352,7 +369,13 @@ border-radius: 0.5em;
 text-align: center;
 }
 
+#form {background-color: rgb(86, 29, 139, 0.7);
+  border-radius: 0.8em;
+  padding: 1.5em;
+  border: ivory;
+  border-style: ridge;}
 
+  #form h3 {display: inline;}
 
 table {
   width: 100%;
@@ -389,17 +412,17 @@ th {
 }
 #about p {
   text-align: center;
+  background-color: #000;
+  border-radius: 2em;
+  padding: 1em;
+  flex: 2;
 }
 
 #about img {
-  
+  flex: 3;
  padding: 2em;
-  width: 60%;
+  
  
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 4em;
 }
 

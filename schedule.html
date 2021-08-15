@@ -32,6 +32,8 @@
 <body>
 
     <main>
+        <h1>My <a href="www.twitch.tv/relaxander666">Twitch.tv</a> Schedule</h1>
+        <div id="schedule">
         <table>
             <tr>
                 <th>Sunday</th>
@@ -44,16 +46,32 @@
             </tr>
             <tr>
                 <th>Maybe!</th>
-                <th>4 PM - 8PM</th>
+                <th id="Monday"></th>
                 <th>No Stream</th>
-                <th>4 PM - 8 PM</th>
+                <th id="Wednesday"></th>
                 <th>No Stream</th>
-                <th>7 PM - 11 PM</th>
-                <th>Whenever I please!</th>
+                <th id="Friday"></th>
+                <th>Whenever I please!<br>(Times set to vary.)</th>
             </tr>
-            </table>
+           
+        </table>
+        </div>
     </main>
+<script> 
+const mondayStart = new Date( 0, 0, 0, 13 )
+const mondayEnd = new Date( 0, 0, 0, 17 )
+const wednesdayStart = new Date( 0, 0, 0, 13 )
+const wednesdayEnd = new Date( 0, 0, 0, 18 )
+const fridayStart = new Date( 0, 0, 0, 17 )
+const fridayEnd = new Date( 0, 0, 0, 21 )
 
+
+
+document.getElementById("Monday").innerHTML = mondayStart.toLocaleTimeString() + " - " + mondayEnd.toLocaleTimeString();
+document.getElementById("Wednesday").innerHTML = wednesdayStart.toLocaleTimeString() + " - " + wednesdayEnd.toLocaleTimeString();
+document.getElementById("Friday").innerHTML = fridayStart.toLocaleTimeString() + " - " + fridayEnd.toLocaleTimeString();
+
+</script>
 <footer><img src="images/r666.png" class="boxlogo" alt="r666 box logo"><br>
     <italic>Copyright 2021 Alexander Mykitschak</italic>
 </footer>
