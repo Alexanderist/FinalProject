@@ -7,7 +7,7 @@ body {
   background-size: auto;
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
 }
 
 
@@ -25,7 +25,9 @@ h1 {
 
 
 footer {
-  position:sticky;
+  position: static;
+  bottom: 0;
+
     background-color: #9147ff;
   padding: 0.2em 0em 0.1em 0em;
   text-align: center;
@@ -182,8 +184,9 @@ div.pullUpDown a:hover:after {
 }
 
 #pinklogo {
-  width: 300px;
+  width: 420px;
   align-self: center;
+  padding-top: 1em;
 }
 
 #action {
@@ -197,7 +200,7 @@ div.pullUpDown a:hover:after {
 #action :nth-child(2) { margin-top: 1em;
  filter: drop-shadow(1px 1px 1px);
 
-background-color: rgb(86, 29, 139, 0.7);
+background-color: rgb(73, 24, 119);
 
 border-radius: 0.8em;
 padding: 0.3em;
@@ -245,7 +248,7 @@ margin-top: 2em;
 #videodiv h4 {color: ivory;
 width: 550px;
 text-align: center;
-background-color: rgb(86, 29, 139, 0.7);
+background-color: rgb(73, 24, 119);
 border-radius: 0.8em;
 padding: 0.3em;
 border: ivory;
@@ -369,7 +372,7 @@ border-radius: 0.5em;
 text-align: center;
 }
 
-#form {background-color: rgb(86, 29, 139, 0.7);
+#form {background-color: rgb(73, 24, 119);
   border-radius: 0.8em;
   padding: 1.5em;
   border: ivory;
@@ -402,6 +405,7 @@ th {
   margin-right: auto;
 }
 
+td {max-width: 300px;}
 
 
 #about {
@@ -415,13 +419,13 @@ th {
   background-color: #000;
   border-radius: 2em;
   padding: 1em;
-  flex: 2;
+
 }
 
 #about img {
-  flex: 3;
+ 
  padding: 2em;
-  
+  max-width: 1200px;
  
   border-radius: 4em;
 }
@@ -459,22 +463,23 @@ th {
   clear: both;
 }
 
+/* gallery styling */ 
+
 .galcontainer {
   position: relative;
   display: none;
   max-width: 50%;
+  float:right;
+ 
 }
 
-.row {
-  max-width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-/* gallery styling */ 
 
-.closebtn {
-  /* close button inside the image */
+
+
+
+
+.closebtn { /* close button inside the image */
   position: absolute;
   top: 10px;
   right: 15px;
@@ -483,14 +488,25 @@ th {
   cursor: pointer;
 }
 
-#gallerysmall {
+.galwrapper {height: 100%;}
+
+#gallerysmall {float:left;
+  display: flex;
+  flex-direction: column;
   border-style: groove;
   border-width: 15px;
 
   margin-left: 5%;
   margin-right: 5%;
+  max-width: 250px;
+  justify-content: center;
+  
 }
-#gallerysmall img {max-width: 160px;}
+
+
+#gallerysmall img {max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;}
 
 #imgtext {
   /* expanded image text */
@@ -509,29 +525,4 @@ th {
   src: url("OptimusPrinceps.ttf");
 }
 
-/* @media only screen and (max-width: 1560px) {
-  #indexdiv {
-    flex-direction: column;
-    margin: 0%;
-    padding: 0%;
-  }
-  #pinklogo {
-    overflow: auto;
-    display: block;
-    position: unset;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  #SamplePlayerDivID {
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-
-  #action {
-    margin: 0%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-} */

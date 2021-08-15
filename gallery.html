@@ -1,102 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alexander Mykitschak">
-    
+
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
-    
-    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-    
+
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
     <title>Relaxander666 Home</title>
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
 </head>
-<header><div class="container pullUpDown"> <!--Navigation - now with animation!-->
-    <img src="images/longlogo.png" class="longlogo" alt="Relaxander text logo"><br>
- <a href="index.html">Home</a>
- <a href="about.html">About Me</a>
- <a href="highlights.html">Highlights</a>
- <a href="schedule.html">Schedule</a>
- <a href="gallery.html">Gallery</a>
- <a href="topten.html">Top Ten</a>
- <a href="contact.html">Contact</a>
-</div>
+<header>
+    <div class="container pullUpDown">
+        <!--Navigation - now with animation!-->
+        <img src="images/longlogo.png" class="longlogo" alt="Relaxander text logo"><br>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="topten.html">Top Ten</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </header>
+
 <body>
 
-<main>
-   
-    <div class="galcontainer">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
-    </div>
-    <section id="gallerysmall">
-        <div class="row">
-            <div class="column h2label">
-                <h2>Maya Photos:</h2>
+    <main>
+        <div class="galwrapper">
+            <div class="galcontainer">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
             </div>
-            <div class="column">
-                <img src="gallery/maya1.png" alt="Maya sitting on amp" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/maya2.png" alt="Maya being disruptive" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/maya3.png" alt="Turbo Time" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/maya4.png" alt="Maya Sleeping" style="width:100%" onclick="myFunction(this);">
-            </div>
-        </div>
-        <div class="row">
-            <div class="column h2label">
-                <h2>Merch Photos:</h2>
-            </div>
-            <div class="column">
-                <img src="gallery/merch1.jpg" alt="Posing with new sweater" style="width:100%"
-                    onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/merch2.jpg" alt="Relaxander Tshirt (film camera)" style="width:100%"
-                    onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/merch3.jpg" alt="Extreme power stance in Relaxander sweater" style="width:100%"
-                    onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/merch4.jpg" alt="Relaxander mug held up by cutie" style="width:100%"
-                    onclick="myFunction(this);">
-            </div>
-        </div>
-        <div class="row">
-            <div class="column h2label">
-                <h2>Stream Photos:</h2>
-            </div>
-            <div class="column">
+            <section id="gallerysmall">
 
-                <img src="gallery/stream1.png" alt="Alex and Mina ready to co-stream" style="width:100%"
-                    onclick="myFunction(this);">
-            </div>
-            <div class="column">
+                <div class="row">
+                    <h3>Maya Photos:</h3><br>
 
-                <img src="gallery/stream2.png" alt="POV: You're ready to go live" style="width:100%"
-                    onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/maya3.png" alt="Turbo Time" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="gallery/maya4.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
-            </div>
+
+                    <img src="gallery/maya1.png" alt="Maya sitting on amp" style="width:100%"
+                        onclick="myFunction(this);">
+
+
+                    <img src="gallery/maya2.png" alt="Maya being disruptive" style="width:100%"
+                        onclick="myFunction(this);">
+
+
+                    <img src="gallery/maya3.png" alt="Turbo Time" style="width:100%" onclick="myFunction(this);">
+
+
+                    <img src="gallery/maya4.png" alt="Maya Sleeping" style="width:100%" onclick="myFunction(this);">
+
+                </div>
+                <div class="row">
+                    <div>
+                        <h3>Merch Photos:</h3><br>
+                    </div>
+                    <div>
+                        <img src="gallery/merch1.jpg" alt="Posing with new sweater" style="width:100%"
+                            onclick="myFunction(this);">
+                    </div>
+                    <div>
+                        <img src="gallery/merch2.jpg" alt="Relaxander Tshirt (film camera)" style="width:100%"
+                            onclick="myFunction(this);">
+                    </div>
+                    <div>
+                        <img src="gallery/merch3.jpg" alt="Extreme power stance in Relaxander sweater"
+                            style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div>
+                        <img src="gallery/merch4.jpg" alt="Relaxander mug held up by cutie" style="width:100%"
+                            onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>Stream Photos:</h3>
+                    </div><br>
+                    <div>
+
+                        <img src="gallery/stream1.png" alt="Alex and Mina ready to co-stream" style="width:100%"
+                            onclick="myFunction(this);">
+                    </div>
+                    <div>
+
+                        <img src="gallery/stream2.png" alt="POV: You're ready to go live" style="width:100%"
+                            onclick="myFunction(this);">
+                    </div>
+                    <div>
+                        <img src="gallery/maya3.png" alt="Turbo Time" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div>
+                        <img src="gallery/maya4.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                </div>
         </div>
-    </section>
+        </section>
 
-</main>
+    </main>
 
     <script>
         function myFunction(imgs) {
@@ -107,7 +114,9 @@
             expandImg.parentElement.style.display = "block";
         }
     </script>
-<footer><img src="images/r666.png" class="boxlogo" alt="r666 box logo"><br><italic>Copyright 2021 Alexander Mykitschak</italic></footer>
+    <footer><img src="images/r666.png" class="boxlogo" alt="r666 box logo"><br>
+        <italic>Copyright 2021 Alexander Mykitschak</italic>
+    </footer>
 </body>
 
 </html>
