@@ -449,6 +449,7 @@ td {max-width: 300px;}
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly ;
+  flex-wrap: wrap;
 }
 #about p {
   text-align: center;
@@ -463,16 +464,26 @@ width: 420px;
 }
 
 #about img {
- 
- padding: 2em;
+  
+ padding-top: 2em;
+ padding-bottom: 2px;
   max-width: 1100px;
  width: fit-content;
   border-radius: 4em;
   filter: drop-shadow(1px 1px 3px #000000);
 }
 
-
-
+@media only screen and (max-width: 1155px) {
+  #about img {max-width: 800px;
+  }
+  
+}
+ @media only screen and (max-width:360px) {
+   #about img {max-width: 330px;}
+   #about p {max-width: 300px;
+  font-size: 14px;}
+   
+ }
 
 
 /* responsiveness styling */
