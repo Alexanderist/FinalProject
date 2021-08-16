@@ -22,7 +22,7 @@ main {
 
 
 h1 {
-  font-family: Optimus Princeps;
+  font-family: OptimusPrinceps;
   filter: drop-shadow(1px 1px 3px #000);
 }
 
@@ -38,7 +38,7 @@ footer {
   color: beige;
 
   width: 100%;
-  font-size: 12px;
+  
 }
 
 footer span {
@@ -262,7 +262,7 @@ margin-bottom: 0%}
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 1150px;
+  height: 1180px;
   align-items: center;
   width: auto;
   
@@ -289,9 +289,10 @@ border-style: ridge;}
   margin-left: auto;
   margin-right: auto;
 }
-#charitymilestones {
-  width: 500px;
+.charitymilestones {
+  width: 550px;
   margin-top: 1em;
+  
 }
 
 #stats {
@@ -328,6 +329,8 @@ filter: drop-shadow(1px 1px 3px #000);}
 margin-left: 20%;
 margin-right: 20%;
 padding: 1.4em 0em;}
+
+#schedule tr {font-size: 18px;}
 
 #schedule tr, td {height: 3em;}
 
@@ -403,16 +406,18 @@ td {
 }
  
 #contact a {display: flex;
-margin: 0.8em;}
+margin: 0.8em;
+align-items: center;}
 
 #contact a img {width: 50px;
 margin: 1em 1em 1em 0em ;}
 
-#contact a label {flex:auto;
-  align-self: center;
+#contact a p {flex:auto;
+  align-content: center;
 border: 20px;
 padding: 0.3em;
-background-color: rgba(53, 53, 53, 0.8);
+
+background-color: rgba(71, 71, 71, 0.8);
 cursor: pointer;
 border-radius: 0.5em;
 text-align: center;
