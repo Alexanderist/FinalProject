@@ -36,7 +36,7 @@
             <section id="gallerysmall">
 
                 <div class="row">
-                    <h3>Maya Photos:</h3><br>
+                    <h3>Click an image to enlarge!<br>Maya Photos:</h3><br>
 
 
                     <img src="gallery/maya1.png" alt="Maya sitting on amp" style="width:100%" onclick="enlarge(this);">
@@ -49,7 +49,7 @@
                     <img src="gallery/maya3.png" alt="Turbo Time" style="width:100%" onclick="enlarge(this);">
 
 
-                    <img src="gallery/maya4.png" alt="Maya Sleeping" style="width:100%" onclick="enlarge(this);">
+                    <img src="gallery/maya4.png" alt="Maya attempting sleep" style="width:100%" onclick="enlarge(this);">
 
                 </div>
                 <div class="row">
@@ -61,7 +61,7 @@
                             onclick="enlarge(this);">
                     </div>
                     <div>
-                        <img src="gallery/merch2.jpg" alt="Relaxander Tshirt (film camera)" style="width:100%"
+                        <img src="gallery/merch2.jpg" alt="Relaxander Tshirt on a good boy (film camera)" style="width:100%"
                             onclick="enlarge(this);">
                     </div>
                     <div>
@@ -88,16 +88,16 @@
                             onclick="enlarge(this);">
                     </div>
                     <div>
-                        <img src="gallery/maya3.png" alt="Turbo Time" style="width:100%" onclick="enlarge(this);">
+                        <img src="gallery/blindfolded.png" alt="Alex playing, blindfolded" style="width:100%" onclick="enlarge(this);">
                     </div>
                     <div>
-                        <img src="gallery/maya4.png" alt="Lights" style="width:100%" onclick="enlarge(this);">
+                        <img src="gallery/bestboys.png" alt="Alex poses with best boy" style="width:100%" onclick="enlarge(this);">
                     </div>
                 </div>
             </section><div></div>
             <div class="galcontainer">
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg" style="width:100%">
+                <img id="expandedImg" >
                 <div id="imgtext"></div>
             </div>
             
@@ -112,7 +112,7 @@
             var imgText = document.getElementById("imgtext");
             expandImg.src = imgs.src;
             imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
+            expandImg.parentElement.style.display = "flex";
         }
     </script>
     <footer><img src="images/r666.png" class="boxlogo" alt="r666 box logo"><br>

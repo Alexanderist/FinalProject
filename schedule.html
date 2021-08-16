@@ -34,45 +34,58 @@
     <main>
         <h1>My <a href="https://twitch.tv/relaxander666">Twitch.tv</a> Schedule</h1>
         <div id="schedule">
-        <table>
-            <tr>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-            </tr>
-            <tr>
-                <th>Maybe!</th>
-                <th id="Monday"></th>
-                <th>No Stream</th>
-                <th id="Wednesday"></th>
-                <th>No Stream</th>
-                <th id="Friday"></th>
-                <th>Whenever I please!<br>(Times set to vary.)</th>
-            </tr>
-           
-        </table>
+            <table>
+                <tr>
+                    <th><h3>Sunday:</h3></th>
+                    <th>Maybe!</th>
+                </tr>
+                <tr>
+                    <th><h3>Monday:</h3></th>
+                    <th id="Monday"></th>
+                </tr>
+                <tr>
+                    <th><h3>Tuesday:</h3></th>
+                    <th>No Stream</th>
+                </tr>
+                <tr>
+                    <th><h3>Wednesday:</h3></th>
+
+                    <th id="Wednesday"></th>
+                </tr>
+                <tr>
+                    <th><h3>Thursday:</h3></th>
+                    <th>No Stream</th>
+                </tr>
+                <tr>
+                    <th><h3>Friday:</h3></th>
+                    <th id="Friday"></th>
+                </tr>
+                <tr>
+                    <th><h3>Saturday:</h3></th>
+                    <th>Whenever I please!<br>(Times set to vary.)</th>
+                </tr>
+
+            </table>
         </div>
     </main>
-<script> 
-const mondayStart = new Date(Date.UTC( 0, 0, 0, 18 ));
-const mondayEnd = new Date(Date.UTC( 0, 0, 0, 22 ));
-const wednesdayStart = new Date(Date.UTC( 0, 0, 0, 18 ));
-const wednesdayEnd = new Date(Date.UTC( 0, 0, 0, 23 ));
-const fridayStart = new Date(Date.UTC( 0, 0, 0, 21 ));
-const fridayEnd = new Date(Date.UTC( 0, 0, 0, 1 ));
+    <script>
+        const mondayStart = new Date(Date.UTC(0, 0, 0, 18));
+        const mondayEnd = new Date(Date.UTC(0, 0, 0, 22));
+        const wednesdayStart = new Date(Date.UTC(0, 0, 0, 18));
+        const wednesdayEnd = new Date(Date.UTC(0, 0, 0, 23));
+        const fridayStart = new Date(Date.UTC(0, 0, 0, 21));
+        const fridayEnd = new Date(Date.UTC(0, 0, 0, 1));
 
 
 
-document.getElementById("Monday").innerHTML = mondayStart.toLocaleTimeString() + " - " + mondayEnd.toLocaleTimeString();
-document.getElementById("Wednesday").innerHTML = wednesdayStart.toLocaleTimeString() + " - " + wednesdayEnd.toLocaleTimeString();
-document.getElementById("Friday").innerHTML = fridayStart.toLocaleTimeString() + " - " + fridayEnd.toLocaleTimeString();
-
-</script>
-<footer><img src="images/r666.png" class="boxlogo" alt="r666 box logo"><br>
-    <italic>Copyright 2021 Alexander Mykitschak</italic>
-</footer>
+        document.getElementById("Monday").innerHTML = mondayStart.toLocaleTimeString() + " - " + mondayEnd
+            .toLocaleTimeString();
+        document.getElementById("Wednesday").innerHTML = wednesdayStart.toLocaleTimeString() + " - " + wednesdayEnd
+            .toLocaleTimeString();
+        document.getElementById("Friday").innerHTML = fridayStart.toLocaleTimeString() + " - " + fridayEnd
+            .toLocaleTimeString();
+    </script>
+    <footer><img src="images/r666.png" class="boxlogo" alt="r666 box logo"><br>
+        <italic>Copyright 2021 Alexander Mykitschak</italic>
+    </footer>
 </body>

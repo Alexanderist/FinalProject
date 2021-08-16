@@ -22,7 +22,7 @@ main {
 
 
 h1 {
-  
+  font-family: Optimus Princeps;
   filter: drop-shadow(1px 1px 3px #000);
 }
 
@@ -72,7 +72,9 @@ header span {
 
 a:link {color:rgb(255, 255, 134)}
 a:visited {color:#9147ff}
-
+ 
+#socials a:link {color:rgb(255, 255, 134)}
+#socials a:visited {color:#9147ff}
 /* global flex classes */
 .row {
   display: flex;
@@ -97,12 +99,30 @@ a:visited {color:#9147ff}
 
 /* nav styling */
 
+
+
+@media only screen and (max-width: 638px) {
+  .container a {display: none;}
+  
+  img.longlogo {
+    margin: 0;
+    width: 275px;
+  }
+
+  div.container {display: flex;}
+}
+
+@media only screen and (max-width: 360px) {
+  img.longlogo {width: 240px;}
+  
+}
+
 .longlogo {
   margin-bottom: 0.6em;
   width: 275px;
 }
 
-div.container {
+.container {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
   padding: 0.8em 1em;
@@ -125,28 +145,13 @@ div.container a {
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (max-width: 637px) {.nav a {
-padding: 6em;
+@media only screen and (max-width: 636px) { 
+  .container {width: auto;
+  height: auto;}
 }
   
-}
-div.galcontainer {
-  margin: 0 auto;
-  padding: 2.7em 3em;
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-}
 
-div.galcontainer a {
-  color: #fff;
-  text-decoration: none;
-  font: 24px "Arial Narrow Bold";
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
+
 
 div.pullUpDown a:before,
 div.pullUpDown a:after {
@@ -190,6 +195,8 @@ div.pullUpDown a:hover:after {
   width: 420px;
   align-self: center;
   padding-top: 1em;
+  filter: drop-shadow(1px 1px 3px #000
+  );
 }
 
 #action {
@@ -287,6 +294,12 @@ border-style: ridge;}
   margin-top: 1em;
 }
 
+#stats {
+border: #9147ff;
+border-style: outset;
+border-width: 10px;
+filter: drop-shadow(1px 1px 3px #000);}
+
 @media only screen and (max-width: 1200px) {
   #videodiv {flex-wrap: nowrap;}
   
@@ -376,18 +389,16 @@ td {
   display: inline-flex;
 }
 
-#contact input {
-  margin-top: 0.6em;
-  width: 12%;
-  min-width: 220px;
+#contact input {margin-top: 0.4em ;}
+
   
-}
+
 
 #contact textarea {
   height: 100px;
-  margin-top: 0.6em;
+  margin-top: 0.3em;
   width: 100%;
-  min-width: 250px;
+  min-width: 420px;
   
 }
  
@@ -401,13 +412,13 @@ margin: 1em 1em 1em 0em ;}
   align-self: center;
 border: 20px;
 padding: 0.3em;
-background-color: rgba(240, 248, 255, 0.8);
+background-color: rgba(53, 53, 53, 0.8);
 cursor: pointer;
 border-radius: 0.5em;
 text-align: center;
 }
 
-#form {background-color: rgb(73, 24, 119);
+#form {background-color: rgb(101, 42, 156);
   border-radius: 0.8em;
   padding: 1.5em;
   border: ivory;
@@ -517,34 +528,65 @@ width: 420px;
 
 /* gallery styling */ 
 
+/* div.galcontainer {
+  margin: 0 auto;
+  padding: 2.7em 3em;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+} */
+
+/* div.galcontainer a {
+  color: #fff;
+  text-decoration: none;
+  font: 24px "Arial Narrow Bold";
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+} */
+
 .gallerywrapper {display: flex;
   height: calc(100vh - 121.78px - 44.94px);
-  overflow: hidden;}
+  overflow-y: auto;
+justify-content: center;}
 
 .galwrapper {height: 100%;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-grow: 50%;
+
+  
 }
 
 .galcontainer {
   position: relative;
   display: none;
-  height: 80%;
+  max-height: auto;
+  max-width: auto;
+ 
   
  
  
 }
  #expandedImg {
 border-radius: 1em;
-max-height: 70%;
+max-height: 660px;
+max-width: 700px;
+height: auto;
+  width: auto;
+  display: block;
+
 
 
 }
 
 
 
+@media only screen and (max-width: 1084px) { 
+  .gallerywrapper {max-width: auto;
+  }
+
+  #gallerysmall img {width:150px;}
+  
+}
 
 
 
@@ -560,7 +602,7 @@ max-height: 70%;
 
 
 #gallerysmall {
- overflow: auto;
+ overflow-y: auto;
   border-style: groove;
   border-width: 8px;
 border-color: #9147ff;
@@ -575,7 +617,8 @@ border-color: #9147ff;
   margin-left: auto;
   margin-right: auto;
 margin-bottom: 0.5em;
-border-radius: 0.5em;}
+border-radius: 0.5em;
+min-width: 220px}
 
 #imgtext {
   /* expanded image text */
