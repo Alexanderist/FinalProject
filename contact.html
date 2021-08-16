@@ -43,7 +43,10 @@
 
 
              
-            <div id="form"><img src=images/envelope.png alt="envelope icon"><h3>  Contact Me!</h3><br>
+            <div id="form"> <!--added form controls + post method -->
+                <form name="contactme" method="post" action="mailto:relaxander666@gmail.com">
+
+                <img src=images/envelope.png alt="envelope icon"><h3>  Contact Me!</h3><br>
                 <input name="name" id="name" placeholder="Enter your first and last name" size="50"><br>
                 <input name="email" id="email" placeholder="Enter your email address" size="50"><br>
                 <input name="twitchname" id="twitchname" placeholder="Enter your name on Twitch" size="50"><br>
@@ -52,13 +55,15 @@
 
                 <textarea name="message" id="message" placeholder="Write your message" style="resize: vertical;" ></textarea>
                 Contact me by: 
+                
                 <input type="radio" name="contactby" checked id="emailradio" value="email">
                 <label for="emailradio">E-mail</label> 
                 <input type="radio" name="contactby" checked id="twitchradio" value="twitch">
                 <label for="twitchradio">Twitch Whisper</label> 
                 <input type="radio" name="contactby" checked id="discordradio" value="discord">
-                <label for="discordradio">Discord DM</label> 
-                
+                <label for="discordradio">Discord DM</label> <br>
+                <input type="submit" value="Submit"><input type="reset" value="Reset form"
+                </form>
                 
 
             </div>
